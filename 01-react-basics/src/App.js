@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
-    <h1>Hi saqib</h1>
+    <h1>Hi {props.name}</h1>
   );
 }
 
