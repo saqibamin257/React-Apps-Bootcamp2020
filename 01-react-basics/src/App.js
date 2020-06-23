@@ -4,7 +4,7 @@ import './App.css';
 
 function App(props) {
   return (
-    <h1>Hi {props.name}</h1>
+  <h1>Hi {props.firstName} {props.lastName}!</h1>
   );
 }
 
