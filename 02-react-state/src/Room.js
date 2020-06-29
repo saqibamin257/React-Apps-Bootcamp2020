@@ -3,18 +3,21 @@ import './index.css';
 
 
 function Room() {
+ const [isLit,setLit]= useState(true);
+ const [temp,setTemp] = useState(22);
  
- const [isOn,setSwitch]=useState(true);
- 
+ const brightness =isLit ? "Lit" : "dark";
 
   return (
-    <div >     
-     the switch is {isOn ? 'On': 'Off'}
+    <div className={`room ${brightness}`}>
+     the room is {isLit ? 'lit':'dark'}
      <br/>
-    
-     <button onClick={() => setSwitch(true) } >On</button>
-     <button onClick={() => setSwitch(false) } >Off</button>
-
+     the room temperature is :{temp} celcius!
+     <br/>
+     <button onClick = {() => setLit(!isLit)}> flip </button>
+     <br/>
+     <button onClick= { () => setTemp(temp+1) } > + </button>
+     <button onClick= { () => setTemp(temp-1)  }> - </button>
     </div>
   );
 }
