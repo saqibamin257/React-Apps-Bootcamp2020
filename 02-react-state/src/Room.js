@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function Room() {
- const [isLit,setLit]= React.useState(true);
+ const [isLit,setLit]= useState(true);
 
   return (
     <div className="App">
-     The Room is lit
+     the room is {isLit ? 'lit':'dark'}
     </div>
   );
 }
