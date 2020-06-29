@@ -1,15 +1,20 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+
 
 function Room() {
- const [isLit,setLit]= useState(true);
+ 
+ const [isOn,setSwitch]=useState(true);
+ 
 
   return (
-    <div className="App">
-     the room is {isLit ? 'lit':'dark'}
+    <div >     
+     the switch is {isOn ? 'On': 'Off'}
      <br/>
-     <button onClick = {() => setLit(!isLit)}> flip </button>
+    
+     <button onClick={() => setSwitch(true) } >On</button>
+     <button onClick={() => setSwitch(false) } >Off</button>
+
     </div>
   );
 }

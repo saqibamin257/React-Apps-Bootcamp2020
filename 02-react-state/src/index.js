@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import Room from './Room';
 import * as serviceWorker from './serviceWorker';
 
