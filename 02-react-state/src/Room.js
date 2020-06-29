@@ -8,6 +8,8 @@ function Room() {
   return (
     <div className="App">
      the room is {isLit ? 'lit':'dark'}
+     <br/>
+     <button onClick = {() => setLit(!isLit)}> flip </button>
     </div>
   );
 }
